@@ -9,7 +9,7 @@ A privacidade e a segurança dos dados dos nossos usuários são prioridades abs
 ### 1. Coleta e Armazenamento de Dados Pessoais (Minimização de Dados)
 O **TI-Coruja** opera sob o princípio de **minimização de dados**, limitando a coleta ao estritamente necessário para a autenticação e validação de uso do software.
 
-* **Coletamos exclusivamente** o endereço de **e-mail** do usuário e o **identificador de dispositivo/hardware (HWID)**. Essas informações são processadas de forma não efêmera no nosso servidor para fins de autenticação, gestão de conta, validação de licença e prevenção de fraudes (impedindo a execução simultânea da mesma licença em múltiplos computadores).
+* **Coletamos exclusivamente** o endereço de **e-mail** do usuário e o **identificador de dispositivo/hardware (HWID)**. Essas informações são processadas de forma não efêmera no nosso servidor para fins de autenticação, gestão de conta, validação de licença e prevenção de fraudes (impedindo a execução simultânea da mesma licença em múltiplos celulares).
 * **Não coletamos** nome completo, telefone, localização geográfica, contatos, dados bancários ou históricos de navegação.
 * O aplicativo **não possui telemetria de rastreamento** comercial nem utiliza SDKs de terceiros para exibição de anúncios ou análise de perfil de usuário.
 * Os dados coletados são transmitidos via conexão criptografada (HTTPS) diretamente para a nossa infraestrutura e **não são compartilhados com terceiros**.
