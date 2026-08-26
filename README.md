@@ -20,7 +20,7 @@ O **TI-Coruja** opera sob o princípio de **minimização de dados**, limitando 
 O aplicativo atua como um gerenciador e mini-servidor local de automação para formatação e configuração de sistemas operacionais.
 
 * **Comunicação Restrita à LAN:** Todas as transferências de arquivos (ISOs, executáveis do agente e scripts de configuração) e verificações de presença ocorrem **exclusivamente dentro da sua rede local (Wi-Fi/LAN ou Tethering USB)** entre o dispositivo móvel e o computador de destino.
-* **Nenhum Dado Enviado à Nuvem:** Suas preferências de pré-personalização (como nome de usuário, nome do computador, senha e imagens definidos para o sistema operacional) permanecem estritamente armazenadas no seu dispositivo e são servidas apenas para o agente na sua rede privada em conexão segura de ponta a ponta.
+* **Nenhum Dado é Enviado à Nuvem:** Suas preferências de pré-personalização (como nome de usuário, nome do computador, senha e imagens definidos para o sistema operacional) permanecem estritamente armazenadas no seu dispositivo e são servidas apenas para o agente na sua rede privada em conexão segura de ponta a ponta.
 
 ---
 
