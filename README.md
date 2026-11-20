@@ -1,6 +1,6 @@
 # Política de Privacidade — ARA OS Deploy (TI Coruja)
 
-**Última atualização:** Novembro de 2026
+**Última atualização:** 20 de Novembro de 2026
 
 A privacidade e a segurança dos dados dos nossos usuários e parceiros são prioridades absolutas. Esta Política de Privacidade descreve como a **TI Coruja Inova Simples (I.S.)** (CNPJ 65.522.668/0001-44) trata informações no ecossistema **ARA OS Deploy** (Aplicativo Android, Agente PC, site oficial e portal de parceiros), em conformidade com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018 – LGPD).
 
