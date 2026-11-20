@@ -1,32 +1,31 @@
-# Política de Privacidade — TI-Coruja
+# Política de Privacidade — ARA OS Deploy (TI Coruja)
 
-**Última atualização:** 25 de agosto de 2026
+**Última atualização:** Novembro de 2026
 
-A privacidade e a segurança dos dados dos nossos usuários são prioridades absolutas. Esta Política de Privacidade descreve como o aplicativo **TI-Coruja** lida com suas informações.
+A privacidade e a segurança dos dados dos nossos usuários e parceiros são prioridades absolutas. Esta Política de Privacidade descreve como a **TI Coruja Inova Simples (I.S.)** (CNPJ 65.522.668/0001-44) trata informações no ecossistema **ARA OS Deploy** (Aplicativo Android, Agente PC, site oficial e portal de parceiros), em conformidade com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018 – LGPD).
 
 ---
 
 ### 1. Coleta e Armazenamento de Dados Pessoais (Minimização de Dados)
-O **TI-Coruja** opera sob o princípio de **minimização de dados**, limitando a coleta ao estritamente necessário para a autenticação e validação de uso do software.
+Operamos sob o princípio de **minimização de dados**, coletando apenas o estritamente necessário para cada finalidade:
 
-* **Coletamos exclusivamente** o endereço de **e-mail** do usuário e o **identificador de dispositivo/hardware (HWID)**. Essas informações são processadas de forma não efêmera no nosso servidor para fins de autenticação, gestão de conta, validação de licença e prevenção de fraudes (impedindo a execução simultânea da mesma licença em múltiplos celulares).
-* **Não coletamos** nome completo, telefone, localização geográfica, contatos, dados bancários ou históricos de navegação.
-* O aplicativo **não possui telemetria de rastreamento** comercial nem utiliza SDKs de terceiros para exibição de anúncios ou análise de perfil de usuário.
-* Os dados coletados são transmitidos via conexão criptografada (HTTPS) diretamente para a nossa infraestrutura e **não são compartilhados com terceiros**.
+* **No Aplicativo Android e Agente PC:** Coletamos exclusivamente o endereço de **e-mail** do titular e o **identificador único de hardware (HWID)**. Essas informações são processadas em nossos servidores para autenticação, gestão de conta, validação de licença e prevenção contra pirataria/uso simultâneo indevido.
+* **Na Contratação pelo Site (Checkout):** Para emissão obrigatória de Nota Fiscal de Serviço Eletrônica (NFS-e) e processamento de pagamentos, coletamos **Nome completo ou Razão Social**, **CPF ou CNPJ** e **e-mail**.
+* **No Portal de Parceiros / Vendedores (`vendedores.html`):** Para cadastro de afiliados, repasse de comissões e prevenção contra autoindicação, coletamos **Nome completo**, **CPF**, **e-mail** e **Chave PIX**.
+* **Não coletamos** localização geográfica, agenda de contatos, histórico de navegação externa ou arquivos pessoais armazenados nos computadores formatados pelo técnico.
 
 ---
 
-### 2. Uso da Rede Local (LAN) e P2P
+### 2. Uso da Rede Local (LAN), P2P e Logs Zero-Knowledge
 O aplicativo atua como um gerenciador e mini-servidor local de automação para formatação e configuração de sistemas operacionais.
 
 * **Comunicação Restrita à LAN:** Todas as transferências de arquivos (ISOs, executáveis do agente e scripts de configuração) e verificações de presença ocorrem **exclusivamente dentro da sua rede local (Wi-Fi/LAN ou Tethering USB)** entre o dispositivo móvel e o computador de destino.
-* **Nenhum Dado é Enviado à Nuvem:** Suas preferências de pré-personalização (como nome de usuário, nome do computador, senha e imagens definidos para o sistema operacional) permanecem estritamente armazenadas no seu dispositivo e são servidas apenas para o agente na sua rede privada em conexão segura de ponta a ponta.
+* **Preferências e Logs:** Suas preferências de pré-personalização permanecem armazenadas localmente no seu dispositivo. Caso o envio opcional de logs em nuvem seja ativado pelo usuário, os registros trafegam com criptografia ponta a ponta (*zero-knowledge*), sem acesso legível por parte da TI Coruja.
 
 ---
 
-### 3. Permissões e Recursos do Sistema Solicitados
-
-Para operar suas funções de automação, servidor HTTP e download de alta performance, o **TI-Coruja** solicita e utiliza os seguintes recursos do dispositivo:
+### 3. Permissões e Recursos do Sistema Solicitados (Android)
+Para operar suas funções de automação, servidor HTTP e download de alta performance, o **ARA OS Deploy** solicita e utiliza os seguintes recursos do dispositivo:
 
 * **Serviço em Primeiro Plano (`FOREGROUND_SERVICE` / `FOREGROUND_SERVICE_DATA_SYNC`):** Necessária para manter o mini-servidor HTTP local ativo e realizar o download contínuo de arquivos grandes (ISOs/Agente) sem interrupção do sistema operacional quando o app estiver em segundo plano ou com a tela apagada/bloqueada.
 * **Acesso à Rede e Wi-Fi (`INTERNET`, `ACCESS_NETWORK_STATE`, `ACCESS_WIFI_STATE`):** Necessária para identificar o endereço IP local do dispositivo na LAN/Tethering, permitir conexões do computador cliente e efetuar o download dos arquivos oficiais e validação de licença via HTTPS.
@@ -36,16 +35,21 @@ Para operar suas funções de automação, servidor HTTP e download de alta perf
 
 ---
 
-### 4. Validação de Licença e Conexão Externa
-A única comunicação externa via Internet realizada pelo aplicativo ocorre para:
+### 4. Comunicação Externa, Subprocessadores e Cookies
+A TI Coruja **não comercializa dados pessoais** e **não utiliza SDKs de anúncios dentro do aplicativo**. O tráfego externo e o compartilhamento ocorrem estritamente para operação técnica e financeira:
 
-1. **Validação do Certificado de Licença:** Comunicação direta com o servidor oficial do TI-Coruja via HTTPS para autenticar a chave do usuário e o HWID do dispositivo. Nenhuma outra informação pessoal além do e-mail de cadastro é anexada a esta requisição.
-2. **Download de Arquivos Oficiais:** Conexão direta via HTTPS a repositórios oficiais/seguros para baixar o executável do agente e ISOs oficiais da empresa detentora de seus direitos, quando solicitado pelo usuário.
+1. **Validação de Licença e Downloads Oficiais:** Comunicação via HTTPS com a infraestrutura oficial da TI Coruja para autenticar a chave/HWID e baixar arquivos oficiais solicitados pelo operador.
+2. **Processamento Financeiro (Asaas Gestão Financeira S.A.):** Intermediação de cobranças (PIX e Cartão de Crédito) e repasse de comissões aos parceiros.
+3. **Infraestrutura e Segurança (Cloudflare):** Hospedagem, banco de dados serverless, armazenamento de arquivos e proteção anti-bot no site.
+4. **Métricas Web e Armazenamento Local:** No site institucional e no portal de parceiros, utilizamos armazenamento local do navegador (`localStorage`/`sessionStorage`) para manter sessões autenticadas, preferência de idioma, aceite de termos e atribuição de indicação comercial por 7 dias, além de tags de conversão do Google Ads no site.
+5. **Painel de Parceiros:** Quando uma assinatura ocorre via link de indicação, o parceiro indicador visualiza em seu painel apenas o nome/razão social do cliente, status da assinatura e contato parcialmente mascarado para conferência de comissões.
 
 ---
 
 ### 5. Retenção e Exclusão de Dados
-Os dados de e-mail e HWID são mantidos em nosso servidor enquanto a licença do usuário estiver ativa. Caso deseje solicitar a exclusão definitiva de seus dados de cadastro, o usuário pode enviar uma solicitação diretamente para o suporte técnico através do e-mail indicado abaixo.
+* Os dados técnicos de conta (e-mail e HWID) são mantidos enquanto a licença estiver ativa e pelo período necessário à prevenção contra fraudes e controle de elegibilidade de testes/reembolsos.
+* Dados vinculados a transações financeiras, emissão de NFS-e e comprovantes de repasse PIX (CPF/CNPJ, valores e datas) são mantidos pelo prazo mínimo de **5 (cinco) anos**, conforme exigência da legislação fiscal e tributária brasileira.
+* Caso deseje solicitar acesso, correção ou a exclusão definitiva de seus dados não sujeitos à guarda legal obrigatória, envie uma solicitação para o e-mail indicado na seção 7.
 
 ---
 
@@ -54,6 +58,8 @@ Podemos atualizar nossa Política de Privacidade periodicamente para refletir me
 
 ---
 
-### 7. Contato
-Se você tiver dúvidas sobre esta Política de Privacidade ou sobre o funcionamento interno do aplicativo, entre em contato pelo e-mail de suporte:
-* **E-mail:** felipe.reskalla7@gmail.com
+### 7. Contato (Controlador e DPO)
+Se você tiver dúvidas sobre esta Política de Privacidade ou sobre o tratamento de dados pessoais, entre em contato com o suporte oficial:
+
+* **Controladora:** TI Coruja Inova Simples (I.S.) — CNPJ 65.522.668/0001-44
+* **E-mail:** atendimento@ticoruja.com
